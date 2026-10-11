@@ -23,8 +23,11 @@ public class StudentController {
     @GetMapping("/all")
     public List<Student> getStudents(){
         log.info("inside getStudents function");
+
+
         return create();
     }
+        log.info("tracker");
 
     private List<Student> create(){
         log.info("inside create function");
